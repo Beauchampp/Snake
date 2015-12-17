@@ -45,10 +45,10 @@ var Game = {
         textStyle_Value = { font: "bold 18px sans-serif", fill: "#fff", align: "center" };
 
         // Score.
-        game.add.text(30, 20, "SCORE", textStyle_Key);
+        game.add.text(30, 20, "POINTS", textStyle_Key);
         scoreTextValue = game.add.text(90, 18, score.toString(), textStyle_Value);
         // Speed.
-        game.add.text(500, 20, "SPEED", textStyle_Key);
+        game.add.text(492, 20, "VITESSE ", textStyle_Key);
         speedTextValue = game.add.text(558, 18, speed.toString(), textStyle_Value);
 
     },
@@ -76,7 +76,7 @@ var Game = {
 
         // A formula to calculate game speed based on the score.
         // The higher the score, the higher the game speed, with a maximum of 10;
-        speed = Math.min(10, Math.floor(score/5));
+        speed = 7;//Math.min(10, Math.floor(score/5));
         // Update speed value on game screen.
         speedTextValue.text = '' + speed;
 
