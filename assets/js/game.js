@@ -2,11 +2,9 @@ var snake, apple, squareSize, score, speed,
     updateDelay, direction, new_direction,
     addNew, cursors, scoreTextValue, speedTextValue, textStyle_Key, textStyle_Value;
 
-
 var rouge =230;
 var bleu =190;
 var vert =170;
-
 
 var Game = {
 
@@ -58,7 +56,6 @@ var Game = {
         speedTextValue = game.add.text(558, 18, speed.toString(), textStyle_Value);
 
     },
-
 
     update: function() {
         
